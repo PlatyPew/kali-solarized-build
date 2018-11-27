@@ -1,0 +1,6 @@
+[submodule "live-build-config"]
+	path = live-build-config
+	url = git://git.kali.org/live-build-config.git
+[submodule "dotfiles-kali"]
+	path = dotfiles-kali
+	url = https://github.com/PlatyPew/dotfiles-kali.git
