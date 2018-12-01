@@ -3,7 +3,7 @@ kali-linux
 kali-desktop-live
 
 # Kali applications
-kali-linux-full
+# kali-linux-full
 
 # Graphical desktop
 kali-desktop-common
@@ -26,20 +26,12 @@ w3m-img
 
 ## i3lock colours
 pkg-config
-libxcb
-libxcb-util
 libpam-dev
 libcairo-dev
 libfontconfig-dev
 libxcb-composite0
 libxcb-composite0-dev
-libxcb-xinerama
-libxcb-randr
-libev
 libx11-xcb-dev
-libxkbcommon
-libxkbcommon-x11
-libjpeg-turbo
 
 ## i3lock betterlockscreen
 bc
