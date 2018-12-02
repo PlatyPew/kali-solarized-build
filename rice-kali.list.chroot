@@ -84,3 +84,6 @@ ranger
 
 # Program launcher
 rofi
+
+# Compton
+compton
