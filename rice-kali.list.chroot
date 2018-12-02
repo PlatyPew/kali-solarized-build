@@ -10,6 +10,7 @@ kali-desktop-common
 xorg
 dmenu
 conky
+open-vm-tools
 
 # Python
 python-virtualenv
