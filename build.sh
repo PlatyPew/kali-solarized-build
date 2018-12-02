@@ -16,6 +16,9 @@ unzip wallpapers.zip -d ./live-build-config/kali-config/common/includes.chroot/r
 mkdir -p ./live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
 cp 'Inconsolata Nerd Font Complete.otf' ./live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
 
+# Install configs
+git clone https://github.com/PlatyPew/dotfiles.git ./live-build-config/kali-config/common/includes.chroot/root/.config
+
 # Begin live build
 cd live-build-config
 ./build.sh --variant i3wm --verbose
