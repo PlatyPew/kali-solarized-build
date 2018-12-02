@@ -57,6 +57,7 @@ libx11-xcb-dev
 bc
 feh
 x11-xserver-utils
+imagemagick
 
 # Terminal
 g++
@@ -91,3 +92,4 @@ compton
 curl
 git
 zsh
+python3-pip
