@@ -19,6 +19,9 @@ cp 'Inconsolata Nerd Font Complete.otf' ./live-build-config/kali-config/common/i
 # Install configs
 git clone https://github.com/PlatyPew/dotfiles.git ./live-build-config/kali-config/common/includes.chroot/root/.config
 
+# Install vim plug
+curl -fLo ./live-build-config/kali-config/common/includes.chroot/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # Begin live build
 cd live-build-config
 ./build.sh --variant i3wm --verbose
