@@ -59,7 +59,6 @@ feh
 x11-xserver-utils
 
 # Terminal
-git
 g++
 libgtk-3-dev
 gtk-doc-tools
@@ -87,3 +86,8 @@ rofi
 
 # Compton
 compton
+
+### Temporary stuff ###############################
+curl
+git
+zsh
