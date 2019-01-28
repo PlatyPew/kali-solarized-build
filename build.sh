@@ -9,23 +9,13 @@ git submodule update --remote --recursive
 # Include packages
 cp rice-kali.list.chroot ./live-build-config/kali-config/variant-i3wm/package-lists/kali.list.chroot
 
-# Include hooks
-# cp rice-i3gaps.chroot ./live-build-config/kali-config/common/hooks/rice-i3gaps.chroot
-# cp rice-neovim.chroot ./live-build-config/kali-config/common/hooks/rice-neovim.chroot
-# cp rice-ohmyzsh.chroot ./live-build-config/kali-config/common/hooksrice-ohmyzsh.chroot/
-# cp rice-termite.chroot ./live-build-config/kali-config/common/hooksrice-termite.chroot/
-# chmod 755 ./live-build-config/kali-config/common/hooks/rice-*
-
 # Copy wallpapers
-mkdir -p ./live-build-config/kali-config/common/includes.chroot/root/Pictures
-tar -xzvf wallpapers.tar.gz -C ./live-build-config/kali-config/common/includes.chroot/root/Pictures
+mkdir -p live-build-config/kali-config/common/includes.chroot/root/Pictures
+cp -r solarized_wallpaper ./live-build-config/kali-config/common/includes.chroot/root/Pictures
 
 # Copy fonts
-mkdir -p ./live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
-cp 'Inconsolata Nerd Font Complete.otf' ./live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
-
-# Install configs
-git clone https://github.com/PlatyPew/dotfiles-kali.git ./live-build-config/kali-config/common/includes.chroot/root/.config
+mkdir -p live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
+cp 'fonts/Inconsolata Nerd Font Complete.otf' ./live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
 
 # Install vim plug
 mkdir -p ./live-build-config/kali-config/common/root/includes.chroot/.local/share/nvim/site/autoload

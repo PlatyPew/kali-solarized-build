@@ -24,6 +24,7 @@ i3lock
 i3status
 w3m
 w3m-img
+nodm
 
 ## i3gaps
 libxcb1-dev
