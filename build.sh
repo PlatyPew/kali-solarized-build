@@ -18,7 +18,7 @@ cp rice-kali.list.chroot ./live-build-config/kali-config/variant-i3wm/package-li
 
 # Copy wallpapers
 mkdir -p ./live-build-config/kali-config/common/includes.chroot/root/Pictures
-unzip wallpapers.zip -d ./live-build-config/kali-config/common/includes.chroot/root/Pictures
+tar -xzvf wallpapers.tar.gz -C ./live-build-config/kali-config/common/includes.chroot/root/Pictures
 
 # Copy fonts
 mkdir -p ./live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
