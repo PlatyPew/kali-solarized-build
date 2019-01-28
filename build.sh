@@ -28,6 +28,8 @@ wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O ./li
 mkdir -p ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh
 sed -i '1iexec zsh' ./live-build-config/kali-config/common/includes.chroot/root/.bashrc
+git clone https://github.com/zsh-users/zsh-completions.git ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh/custom/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Begin live build
 cd live-build-config
