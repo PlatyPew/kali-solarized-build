@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /root/.dotfiles
+cd ~/.dotfiles
 ./install-standalone compton
 ./install-standalone git
 ./install-standalone gtk
