@@ -1,7 +1,7 @@
 #!/bin/sh
 cd /tmp
-git clone --recursive https://github.com/thestinger/termite.git /tmp/thestinger
-git clone https://github.com/thestinger/vte-ng.git /tmp/vte-ng
+git clone --recursive https://github.com/thestinger/termite.git
+git clone https://github.com/thestinger/vte-ng.git
 
 echo export LIBRARY_PATH="/usr/include/gtk-3.0:$LIBRARY_PATH"
 cd /tmp/vte-ng && ./autogen.sh && make && sudo make install

@@ -10,6 +10,7 @@ cp rice-kali.list.chroot ./live-build-config/kali-config/variant-i3wm/package-li
 
 # Include install scripts
 cp install-scripts/* live-build-config/kali-config/common/hooks/live
+cp install-scripts/* live-build-config/kali-config/common/hooks
 
 # Copy wallpapers
 mkdir -p live-build-config/kali-config/common/includes.chroot/root/Pictures
@@ -20,8 +21,10 @@ mkdir -p live-build-config/kali-config/common/includes.chroot/root/.local/share/
 cp 'fonts/Inconsolata Nerd Font Complete.otf' ./live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
 
 # Install vim plug
-mkdir -p ./live-build-config/kali-config/common/root/includes.chroot/.local/share/nvim/site/autoload
-wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O ./live-build-config/kali-config/common/root/includes.chroot/.local/share/nvim/site/autoload/plug.vim
+curl -fLo live-build-config/kali-config/common/includes.chroot/root/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Include dotfiles
+cp -r dotfiles-kali live-build-config/kali-config/common/includes.chroot/root/.dotfiles
 
 # Install oh my zsh
 mkdir -p ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh

@@ -1,0 +1,12 @@
+#!/bin/sh
+cd /root/.dotfiles
+./install-standalone compton
+./install-standalone git
+./install-standalone gtk
+./install-standalone i3
+./install-standalone nvim
+./install-standalone ranger
+./install-standalone rofi
+./install-standalone termite
+./install-standalone tmux
+./install-standalone zsh
