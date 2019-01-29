@@ -54,6 +54,7 @@ libfontconfig-dev
 libxcb-composite0
 libxcb-composite0-dev
 libx11-xcb-dev
+libjpeg-dev
 
 ## i3lock betterlockscreen
 bc

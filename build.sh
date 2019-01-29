@@ -3,8 +3,7 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 cd ${DIR}
 
 # Pull modules
-git submodule init
-git submodule update --remote --recursive
+git submodule update --init --remote --recursive
 
 # Include packages
 cp rice-kali.list.chroot ./live-build-config/kali-config/variant-i3wm/package-lists/kali.list.chroot
