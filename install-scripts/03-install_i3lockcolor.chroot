@@ -1,0 +1,9 @@
+#!/bin/sh
+cd /tmp
+git clone https://github.com/PandorasFox/i3lock-color.git
+
+cd /tmp/i3lock-color
+autoreconf -f -i
+./configure
+make
+sudo make install
