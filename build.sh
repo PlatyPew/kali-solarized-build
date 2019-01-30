@@ -14,7 +14,7 @@ cp install-scripts/* live-build-config/kali-config/common/hooks/live
 # Copy wallpapers
 mkdir -p live-build-config/kali-config/common/includes.chroot/root/Pictures
 cp -r solarized_wallpaper ./live-build-config/kali-config/common/includes.chroot/root/Pictures
-mkdir -p live-build-config/kali-config/common/includes.chroot/root/.config/i3/lockscreen
+cp -r lockscreen live-build-config/kali-config/common/includes.chroot/root/.config/i3
 
 # Copy fonts
 mkdir -p live-build-config/kali-config/common/includes.chroot/root/.local/share/fonts
