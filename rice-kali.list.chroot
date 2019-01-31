@@ -3,7 +3,7 @@ kali-linux
 kali-desktop-live
 
 # Kali applications
-# kali-linux-full
+kali-linux-full
 
 # Graphical desktop
 kali-desktop-common
@@ -92,9 +92,5 @@ rofi
 # Compton
 compton
 
-### Temporary stuff ###############################
-curl
-git
-zsh
-python3-pip
+# Others
 npm
