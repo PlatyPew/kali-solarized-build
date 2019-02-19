@@ -10,3 +10,4 @@ cd ~/.dotfiles
 ./install-standalone termite
 ./install-standalone tmux
 ./install-standalone zsh
+./install-standalone radare2
