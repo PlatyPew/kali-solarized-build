@@ -1,0 +1,1 @@
+echo "ExecStop=killall -9 nodm" >> /usr/lib/systemd/system/nodm.service
