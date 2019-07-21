@@ -11,6 +11,15 @@ cp rice-kali.list.chroot ./live-build-config/kali-config/variant-i3wm/package-li
 # Include install scripts
 cp install-scripts/* live-build-config/kali-config/common/hooks/live
 
+# Set xorg to use Intel graphics
+mkdir -p live-build-config/kali-config/common/includes.chroot/usr/share/X11/xorg.conf.d
+cat << EOF > live-build-config/kali-config/common/includes.chroot/usr/share/X11/xorg.conf.d
+Section "Device"
+    Identifier  "Intel Graphics"
+    Driver      "intel"
+EndSection
+EOF
+
 # Copy wallpapers
 mkdir -p live-build-config/kali-config/common/includes.chroot/root/Pictures
 cp -r solarized_wallpaper ./live-build-config/kali-config/common/includes.chroot/root/Pictures
@@ -30,7 +39,6 @@ git clone --recursive https://github.com/PlatyPew/dotfiles-kali.git ./live-build
 # Install oh my zsh
 mkdir -p ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh
-sed -i '1iexec zsh' ./live-build-config/kali-config/common/includes.chroot/root/.bashrc
 git clone https://github.com/zsh-users/zsh-completions.git ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh/custom/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ./live-build-config/kali-config/common/includes.chroot/root/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 

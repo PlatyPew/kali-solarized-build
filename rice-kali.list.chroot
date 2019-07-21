@@ -4,6 +4,7 @@ kali-desktop-live
 
 # Kali applications
 kali-linux-full
+firefox-esr
 
 # Graphical desktop
 kali-desktop-common
